@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'srliao', // Usually your GitHub org/user name.
-  projectName: process.env.IS_LOCAL ? '/' : 'notes', // Usually your repo name.
+  projectName: 'notes', // Usually your repo name.
   deploymentBranch: 'main',
   trailingSlash: false,
 
@@ -58,14 +58,14 @@ const config: Config = {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-      ],
+      // items: [
+      //   {
+      //     type: 'docSidebar',
+      //     sidebarId: 'tutorialSidebar',
+      //     position: 'left',
+      //     label: 'Tutorial',
+      //   },
+      // ],
     },
     footer: {
       style: 'dark',
