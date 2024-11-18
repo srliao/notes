@@ -1,3 +1,5 @@
+# Add local storage to a cluster
+
 When adding new node to a cluster, also need to add the local storage to the cluster (limited to the new node).
 
 Open up Proxmox web interface in the new node, then under Datacenter -> Storage -> Add:
