@@ -26,7 +26,7 @@ Not all the steps from the Reddit post were needed.
 GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on vfio_iommu_type1.allow_unsafe_interrupts=1"
 ```
 
-Left out the `pcie_acs_override` and it seems to work fine still. Reddit calls for adding `allow_unsafe_interrupts` but adding it to GRUB seems to work just the same.
+Left out the `pcie_acs_override` and it seems to work fine still. Reddit calls for adding `allow_unsafe_interrupts` to `/etc/modprobe.d/vfio.conf' but adding it to GRUB seems to work just the same.
 
 **Potentially required**: Something to do with BAR but might need to add `initcall_blacklist=sysfb_init` to the above based on [this](https://forum.proxmox.com/threads/problem-with-gpu-passthrough.55918/post-478351). Also might need to disable 4G decoding in BIOs (currently I don't have it disabled and it's working still)
 
