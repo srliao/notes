@@ -32,3 +32,11 @@
 .hidden {
   display: none !important;
 }
+
+thead {
+  font-weight: bold;
+}
+
+.a1start {
+  font-weight: 500;
+}
